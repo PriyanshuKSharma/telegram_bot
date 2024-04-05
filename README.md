@@ -1,6 +1,6 @@
-Project Overview
-Project Name: Telegram Bot
-Author: Priyanshu K Sharma
+## Project Overview
+Project Name: Telegram Bot <br>
+Author: Priyanshu K Sharma <br>
 ## Description: <br>
 This is a Telegram bot created using the python-telegram-bot library. The bot responds to various commands and messages from users, providing information and assistance.<br>
 
@@ -23,12 +23,12 @@ The program sets up an Updater and a Dispatcher to handle incoming updates from 
 It adds handlers for various commands and messages using CommandHandler and MessageHandler.<br>
 Finally, it starts the bot by calling start_polling() and enters the idle state.
 
-Repository Structure:<br>
-telegram-bot/
-│
-├── tele-bot.py
-├── requirements.txt
-└── README.md
+## Repository Structure:<br>
+telegram-bot/<br>
+│<br>
+├── tele-bot.py<br>
+├── requirements.txt<br>
+└── README.md<br>
 
 ## Usage
 
