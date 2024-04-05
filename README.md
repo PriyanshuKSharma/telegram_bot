@@ -47,13 +47,10 @@ telegram-bot/<br>
 
 2. Install dependencies: <br>
     ```bash
-    pip install -r requirements.txt <br>
+    pip install -r requirements.txt
 
 3. Set the TOKEN environment variable with your Telegram bot token.<br>
 
 4. Run the bot:<br>
     ```bash
     python tele-bot.py
-
-
-
