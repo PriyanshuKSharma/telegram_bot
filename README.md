@@ -1,6 +1,6 @@
-Project Overview
-Project Name: Telegram Bot
-Author: Priyanshu K Sharma
+## Project Overview
+Project Name: Telegram Bot <br>
+Author: Priyanshu K Sharma <br>
 ## Description: <br>
 This is a Telegram bot created using the python-telegram-bot library. The bot responds to various commands and messages from users, providing information and assistance.<br>
 
