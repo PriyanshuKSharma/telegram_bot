@@ -30,3 +30,28 @@ telegram-bot/
 ├── requirements.txt
 └── README.md
 
+## Usage
+
+1. Start a conversation with the bot by sending a message. <br>
+2. Use the following commands to interact with the bot:<br>
+    - `/start`: Start a conversation with the bot.<br>
+    - `/help`: Get help and information about available commands.<br>
+    - `/content`: Get information about the author.<br>
+    - `/contact`: Get contact information of the author.<br>
+
+## Installation
+
+1. Clone the repository: <br>
+   ```bash
+   git clone https://github.com/your_username/telegram-bot.git <br>
+
+2. Install dependencies: <br>
+pip install -r requirements.txt <br>
+
+3. Set the TOKEN environment variable with your Telegram bot token.<br>
+
+4. Run the bot:<br>
+python tele-bot.py
+
+
+
