@@ -24,9 +24,9 @@ It adds handlers for various commands and messages using CommandHandler and Mess
 Finally, it starts the bot by calling start_polling() and enters the idle state.
 
 Repository Structure:<br>
-telegram-bot/
-│
-├── tele-bot.py
-├── requirements.txt
-└── README.md
+telegram-bot/<br>
+│<br>
+├── tele-bot.py<br>
+├── requirements.txt<br>
+└── README.md<br>
 
