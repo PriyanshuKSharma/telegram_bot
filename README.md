@@ -43,7 +43,7 @@ telegram-bot/<br>
 
 1. Clone the repository: <br>
    ```bash
-   git clone https://github.com/your_username/telegram-bot.git <br>
+   git clone https://github.com/your_username/telegram-bot.git
 
 2. Install dependencies: <br>
     ```bash
