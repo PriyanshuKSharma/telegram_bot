@@ -12,7 +12,6 @@ It defines several functions to handle different commands and messages received 
 
 start:<br>
 Sends a welcome message to users when they start a conversation with the bot.<br>
-
 helps: <br>
 Provides information about the available commands and how to use them.<br>
 content: <br>
