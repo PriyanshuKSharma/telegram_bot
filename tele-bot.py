@@ -42,7 +42,7 @@ GitHub: https://github.com/PriyanshuKSharma
     """)
 
 def handle_message(update, context):
-    update.message.reply_text(f"You said {update.message.text}, Akal nahi hai kya command daal be:(")
+    update.message.reply_text(f"You said {update.message.text}, This is not accepted, please try other command:(")
 
 updater = telegram.ext.Updater(TOKEN, use_context=True)
 dispatcher = updater.dispatcher
