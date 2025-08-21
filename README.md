@@ -56,12 +56,12 @@ You can run the bot inside a Docker container:
 
 1. **Build the Docker image:**
     ```sh
-    docker build -t tele_bot:latest .
+    docker build -t telegram_bot:latest .
     ```
 
 2. **Run the container:**
     ```sh
-    docker run --env-file .env tele_bot:latest
+    docker run --env-file .env telegram_bot:latest
     ```
 
 ## Project Structure
