@@ -1,9 +1,7 @@
 import telegram.ext
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.environ.get("TOKEN")
 
 def start(update, context):
     update.message.reply_text("Namaste!! Aapka Swagat hai apnebot mein")
@@ -29,15 +27,15 @@ Name: Priyanshu Kumar Sharma
 Age: 19 years
 Degree: BTech in Cloud Technology and Information Security
 College: Ajeenkya D Y Patil University
-SEM: 4      Year: 2
+SEM: 7      Year: 4
     
     """)
 
 def contact(update, context):
     update.message.reply_text("""
 
-    LinkedIN: https://www.linkedin.com/in/https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/
-GitHub: https://github.com/PriyanshuKSharma
+    LinkedIN: https://www.linkedin.com/in/priyanshu-kumar-sharma-333800251/
+    GitHub: https://github.com/PriyanshuKSharma
     
     """)
 
