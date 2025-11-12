@@ -7,6 +7,7 @@ WORKDIR /app
 # Copy script and dependencies
 COPY tele-bot.py .
 COPY requirement.txt .
+COPY .env .
 
 
 # Install dependencies
