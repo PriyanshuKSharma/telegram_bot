@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy script and dependencies
 COPY tele-bot.py .
 COPY requirement.txt .
+COPY .env .
+
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirement.txt
