@@ -34,18 +34,30 @@ This project is a simple Telegram bot built with Python. The bot responds to use
     cd Telegram_Bot
     ```
 
-2. **Install dependencies:**
+2. **Set up virtual environment:**
+    ```sh
+    # Install venv if not available
+    sudo apt install python3.12-venv
+    
+    # Create virtual environment
+    python3 -m venv venv
+    
+    # Activate virtual environment
+    source venv/bin/activate
+    ```
+
+3. **Install dependencies:**
     ```sh
     pip install -r requirement.txt
     ```
 
-3. **Set up environment variables:**
+4. **Set up environment variables:**
     - Create a `.env` file in the project root:
       ```env
       TOKEN=your_telegram_bot_token_here
       ```
 
-4. **Run the bot:**
+5. **Run the bot:**
     ```sh
     python tele-bot.py
     ```
