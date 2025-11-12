@@ -61,11 +61,13 @@ pipeline {
                 branch 'main'
             }
             steps {
-                sh '''
-                    docker stop telegram-bot || true
-                    docker rm telegram-bot || true
-                    docker run -d --name telegram-bot --env-file .env ${DOCKER_IMAGE}:latest
-                '''
+                withCredentials([string(credentialsId: 'telegram-bot-token', variable: 'TOKEN')]) {
+                    sh '''
+                        docker stop telegram-bot || true
+                        docker rm telegram-bot || true
+                        docker run -d --name telegram-bot -e TOKEN="${TOKEN}" ${DOCKER_IMAGE}:latest
+                    '''
+                }
             }
         }
     }
