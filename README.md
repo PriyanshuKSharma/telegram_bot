@@ -60,6 +60,8 @@ This project is a simple Telegram bot built with Python. The bot responds to use
 5. **Run the bot:**
     ```sh
     python tele-bot.py
+    # or
+    ./venv/bin/python tele-bot.py
     ```
 
 ## Docker Usage
