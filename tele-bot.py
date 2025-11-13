@@ -18,7 +18,6 @@ async def resume(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         """
 Hi There! I'm Telegram bot created by Priyanshu K Sharma. Please follow these commands:
-
     /start      - Start a conversation
     /content    - About Priyanshu K Sharma
     /contact    - Contact information
@@ -27,7 +26,8 @@ Hi There! I'm Telegram bot created by Priyanshu K Sharma. Please follow these co
     /skills     - Technical skills
     /awards     - Awards & Certifications
     /roles      - Leadership & Club Roles
-    /resume     - Will list the contents
+    /res
+ume     - Will list the contents
 
 Aasha hai isse aapki sahayta hogi!! :)
 I hope this will help you!! :)
