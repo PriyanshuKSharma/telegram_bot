@@ -26,8 +26,7 @@ Hi There! I'm Telegram bot created by Priyanshu K Sharma. Please follow these co
     /skills     - Technical skills
     /awards     - Awards & Certifications
     /roles      - Leadership & Club Roles
-    /res
-ume     - Will list the contents
+    /resume     - Will list the contents
 
 Aasha hai isse aapki sahayta hogi!! :)
 I hope this will help you!! :)
