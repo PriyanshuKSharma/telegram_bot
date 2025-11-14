@@ -61,7 +61,7 @@ async def experience(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("""
 Experience:
 
-1. Marquardt India Pvt. Ltd., Pune — Web Dev Intern (June 2025–Present)
+1. Marquardt India Pvt. Ltd., Pune — Web Dev Intern (June 2025–September 2025)
    - Frontend development, UI/UX, full-stack features, responsive web interfaces (HTML5, CSS3, JS, EJS, MySQL, Express.js)
    - Unit testing, debugging, performance tuning, automation, dashboard maintenance
 
