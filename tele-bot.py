@@ -27,6 +27,9 @@ Hi There! I'm Telegram bot created by Priyanshu K Sharma. Please follow these co
     /awards     - Awards & Certifications
     /roles      - Leadership & Club Roles
     /resume     - Will list the contents
+    /portfolio  - Personal Portfolio Website
+    /hackathon  - Hackathons participated in
+
 
 Aasha hai isse aapki sahayta hogi!! :)
 I hope this will help you!! :)
@@ -179,6 +182,7 @@ def main():
     app.add_handler(CommandHandler("awards", awards))
     app.add_handler(CommandHandler("roles", roles))
     app.add_handler(CommandHandler("hackathon", hackathon))
+    app.add_handler(CommandHandler("portfolio", portfolio))
     app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
 
     app.run_polling()
