@@ -50,9 +50,10 @@ I am a B.Tech candidate specializing in Cloud Technology and Information Securit
 Technical Skills:
 - Programming: Java, Python, Dart, SQL, Shell Scripting
 - Web: HTML, CSS, Tailwind CSS, JavaScript, Node.js, Express, EJS
-- DevOps: Git/GitHub, Terraform, Pulumi, GitLab, Redis, Docker
-- CS Fundamentals: DSA, DBMS
-- Cloud: AWS, Azure, GCP
+- DevOps: Git/GitHub, Terraform, Pulumi, GitLab, Redis, Docker, Jenkins, Kubernetes
+- CS Fundamentals: DSA, DBMS, OS, CN
+- Cloud: Amazon Web Services, MS Azure, Google Cloud Platform
+- AI & ML Tools:  ML Fundamentals, Generative AI, Prompt Engineering, AI Workflow Design, MLFlow
 
 Languages: English, Hindi, Gujarati
     """)
@@ -97,9 +98,10 @@ async def skills(update: Update, context: ContextTypes.DEFAULT_TYPE):
 Technical Skills:
 - Programming: Java, Python, Dart, SQL, Shell Scripting
 - Web: HTML, CSS, Tailwind CSS, JavaScript, Node.js, Express, EJS
-- DevOps: Git/GitHub, Terraform, Pulumi, GitLab, Redis, Docker
-- CS Fundamentals: DSA, DBMS
-- Cloud: AWS, Azure, GCP
+- DevOps: Git/GitHub, Terraform, Pulumi, GitLab, Redis, Docker, Jenkins, Kubernetes
+- CS Fundamentals: DSA, DBMS, OS, CN
+- Cloud: Amazon Web Services, MS Azure, Google Cloud Platform
+- AI & ML Tools:  ML Fundamentals, Generative AI, Prompt Engineering, AI Workflow Design, MLFlow
 - Languages: English, Hindi, Gujarati
         """)
 
@@ -107,6 +109,7 @@ async def awards(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("""
 Awards & Certifications:
 
+- IBM ICE Day Ideathon: 3rd Place (2025)
 - Seamedu Awards 2025: Creative Cloud Integration Award
 - SOF International Mathematics Olympiad: School Rank 3rd (2019)
 - Hackathons: ADYPU Problem-A-Thon, Sharda Tech-a-thon, Smart India Hackathon, NASA Space App Challenge, UNESCO-MIL 2023, Google Solution Challenge 2024, Hackron 2025
@@ -133,8 +136,25 @@ Phone: (91) 93923 81422
 Location: Pune, Maharashtra, India - 411047
     """)
 
+async def hackathon(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("""
+Hackathons:
+- ADYPU Problem-A-Thon
+- Sharda Tech-a-thon
+- Smart India Hackathon
+- NASA Space App Challenge
+- UNESCO-MIL 2023
+- Google Solution Challenge 2024
+- Hackron 2025
+        """)
+
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f"You said {update.message.text}, This is not accepted, please try other command:(. Start with /resume")
+
+async def portfolio(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("""
+    My Portfolio Website: https://priyanshuksharma.github.io/portfolio_priyanshuksharma/
+    """)
 
 def main():
     app = ApplicationBuilder().token(TOKEN).build()
@@ -148,6 +168,7 @@ def main():
     app.add_handler(CommandHandler("skills", skills))
     app.add_handler(CommandHandler("awards", awards))
     app.add_handler(CommandHandler("roles", roles))
+    app.add_handler(CommandHandler("hackathon", hackathon))
     app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
 
     app.run_polling()
