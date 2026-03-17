@@ -78,6 +78,31 @@ You can run the bot inside a Docker container:
     docker run --env-file .env telegram_bot:latest
     ```
 
+## AWS ECR Deployment
+
+To push the Docker image to AWS Elastic Container Registry (ECR):
+
+1. **Authenticate Docker with AWS ECR:**
+    ```sh
+    aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 084662244054.dkr.ecr.ap-south-1.amazonaws.com
+    ```
+    *Note: Ensure you have the latest AWS CLI and Docker installed.*
+
+2. **Build the Docker Image (if not already built):**
+    ```sh
+    docker build -t priyanshuksharma/telegram_bot .
+    ```
+
+3. **Tag the Image for ECR:**
+    ```sh
+    docker tag priyanshuksharma/telegram_bot:latest 084662244054.dkr.ecr.ap-south-1.amazonaws.com/priyanshuksharma/telegram_bot:latest
+    ```
+
+4. **Push the Image to ECR:**
+    ```sh
+    docker push 084662244054.dkr.ecr.ap-south-1.amazonaws.com/priyanshuksharma/telegram_bot:latest
+    ```
+
 ## Project Structure
 
 ```
