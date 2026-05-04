@@ -119,6 +119,7 @@ async def awards(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("""
 Awards & Certifications:
 
+- Seamedu Awards 2026: Multi Cloud Excellence
 - IBM ICE Day Ideathon: 3rd Place (2025)
 - Seamedu Awards 2025: Creative Cloud Integration Award
 - SOF International Mathematics Olympiad: School Rank 3rd (2019)
