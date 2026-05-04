@@ -23,6 +23,7 @@ Hi There! I'm Telegram bot created by Priyanshu K Sharma. Please follow these co
     /contact    - Contact information
     /experience - Professional experience
     /projects   - Projects
+    /research   - Research & Publications
     /skills     - Technical skills
     /awards     - Awards & Certifications
     /roles      - Leadership & Club Roles
@@ -162,6 +163,33 @@ Hackathons:
 - Hackron 2025
         """)
 
+async def research(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("""
+Research & Publications:
+
+📚 Published Research: Democratizing AWS Cloud Operations
+This research presents Nebula, an implementation-based AWS orchestration platform that integrates provisioning, inventory synchronization, health monitoring, and cost observability into a common control plane.
+
+Title: "Democratizing AWS Cloud Operations: A Unified Orchestration Approach To Standardized Infrastructure Management"
+Venue: International Journal of Creative Research Thoughts (IJCRT), Vol. 14, Issue 4, April 2026.
+DOI: 10.56975/ijcrt.v14i4.305033
+Key Contribution: A framework for decoupling user-facing cloud workflows from long-running provisioning tasks using asynchronous execution (Celery/Redis).
+
+🏛️ Cloud Research Internship at IIT Ropar
+Through the Indian Academy of Sciences (IAS) Summer Research Fellowship Program, I worked on serverless flexibility and performance.
+
+Project: XFBench & XFaaS Development.
+Focus: Benchmarking serverless workloads across FaaS providers (AWS Lambda, OpenFaaS) to assess latency and scalability.
+Repositories: XFBench | XFaaS
+
+⚛️ Hybrid Quantum-Cloud Systems
+Exploring the intersection of classical cloud storage and quantum computing resources.
+
+Focus: Strengthening cloud storage security through quantum-inspired cryptographic models.
+Tools: IBM Quantum Experience, AWS Braket, Docker.
+Repository: Quantum Cloud Integration
+        """)
+
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f"You said {update.message.text}, This is not accepted, please try other command:(. Start with /resume")
 
@@ -179,6 +207,7 @@ def main():
     app.add_handler(CommandHandler("contact", contact))
     app.add_handler(CommandHandler("experience", experience))
     app.add_handler(CommandHandler("projects", projects))
+    app.add_handler(CommandHandler("research", research))
     app.add_handler(CommandHandler("skills", skills))
     app.add_handler(CommandHandler("awards", awards))
     app.add_handler(CommandHandler("roles", roles))
